@@ -7,8 +7,12 @@ int main()
 {
     std::cout << "Rule of 3 Demo\n";
     Foo o1(5);
-    Foo o2(o1);
+    Foo o2(7);
     o1.m_pContentList[0] = 20;
+    o1.Print();
+    o2.Print();
+    std::cout << "\n";
+    o1 = o1;
     o1.Print();
     o2.Print();
 }

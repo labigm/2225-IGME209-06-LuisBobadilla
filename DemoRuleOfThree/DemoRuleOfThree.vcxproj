@@ -129,10 +129,12 @@
   <ItemGroup>
     <ClCompile Include="DemoRuleOfThree.cpp" />
     <ClCompile Include="Foo.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Foo.h" />
     <ClInclude Include="Main.h" />
+    <ClInclude Include="test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
