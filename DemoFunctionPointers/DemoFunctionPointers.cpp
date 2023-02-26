@@ -29,12 +29,21 @@ void ActOnEach(std::vector<int>& input, void(*MyFunction)(int))
     std::cout << std::endl;
 }
 
+int AnotherFunction()
+{
+    std::vector<int> myList = { 0,1,2,3,4 };
+    ActOnEach(myList, PrintNegated);
+    return 0;
+}
+
 int main()
 {
     std::vector<int> myList = { 0,1,2,3,4};
     //ActOnEach(myList, PrintNegated);
     ActOnEach(myList, [](int value) {std::cout << value * -2 << ", "; });
+    AnotherFunction();
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
