@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{adecdaee-06cc-40ca-8399-065d8def6161}</ProjectGuid>
-    <RootNamespace>DebugDemo</RootNamespace>
+    <ProjectGuid>{53a92bb1-b3c4-482d-8775-114275b4e2cb}</ProjectGuid>
+    <RootNamespace>DemoFunctions</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Debug Demo.cpp" />
-    <ClCompile Include="Foo.cpp" />
+    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="FunctionsDemo.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Foo.h" />
+    <ClInclude Include="FunctionsDemo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
