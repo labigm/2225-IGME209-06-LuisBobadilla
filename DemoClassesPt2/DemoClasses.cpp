@@ -14,16 +14,24 @@ int main()
 {
     std::cout << "Hello World!\n";
     Animal oAnimal(100);
+    oAnimal.m_nLegs = 99;
     std::cout << "\n";
+
     Eagle oEagle;
     oEagle.Move();
+    oEagle.m_nLegs = 3;
     std::cout << "\n";
+
     Lion oLion(4);
     oLion.Move();
+    oLion.m_nLegs = 4;
     std::cout << "\n";
+
     Hipogriff oHipogriff;
     oHipogriff.Move();
+    oHipogriff.m_nLegs = 6;
     std::cout << "\n";
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

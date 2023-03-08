@@ -1,7 +1,7 @@
 #pragma once
 #include "Animal.h"
 class Eagle :
-    public Animal
+    virtual public Animal
 {
 public:
     Eagle();
