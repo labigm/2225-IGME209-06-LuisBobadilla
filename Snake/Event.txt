@@ -1,0 +1,19 @@
+while (window.pollEvent(event))
+        {
+            // "close requested" event: we close the window
+            switch (event.type)
+            {
+            case sf::Event::Closed:
+                    window.close();
+                    break;
+            case sf::Event::KeyPressed:
+                switch (event.key.code)
+                {
+                case sf::Keyboard::Space:
+                    boxBody->ApplyForceToCenter(b2Vec2(0.0f, 10000.0f), true);
+                    break;
+                default:
+                    break;
+                }
+            }
+        }
