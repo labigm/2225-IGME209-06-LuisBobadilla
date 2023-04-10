@@ -19,12 +19,12 @@ int main()
 
     for (uint i = 0; i < uNodes - 1; i++)
     {
-        nodeList[i]->pNext = nodeList[(i+1)];
+        nodeList[i]->pLeft = nodeList[(i+1)];
     }
 
     Node* pTemp = new Node(40);
-    nodeList[2]->pNext = pTemp;
-    pTemp->pNext = nodeList[3];
+    nodeList[2]->pLeft = pTemp;
+    pTemp->pLeft = nodeList[3];
 
     //Display by the std::vector
     //for (uint i = 0; i < uNodes; i++)
@@ -41,7 +41,7 @@ int main()
     while (pCurrent)
     {
         pCurrent->Display();
-        pCurrent = pCurrent->pNext;
+        pCurrent = pCurrent->pLeft;
     }
 
     //clear memory

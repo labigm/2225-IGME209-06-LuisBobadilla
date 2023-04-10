@@ -2,7 +2,7 @@
 Node::Node(int input)
 {
 	data = input;
-	pNext = nullptr;
+	pLeft = nullptr;
 }
 void Node::Display(void)
 {
