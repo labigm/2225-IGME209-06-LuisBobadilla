@@ -7,10 +7,11 @@ public:
 	Node* pLeft = nullptr;
 	Node* pRight = nullptr;
 
-	Node();
+	//Node();
 	Node(int input);
 	void Display(void);
 	void Push(int input);
+	void Release(void);
 	~Node();
 };
 

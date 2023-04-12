@@ -17,13 +17,15 @@ int main()
 	Node* pRoot = new Node(5);
 	pRoot->Push(9);
 	pRoot->Push(5);
+	pRoot->Push(9);
 	pRoot->Push(6);
 	pRoot->Push(3);
 	pRoot->Push(1);
 
 
 	pRoot->Display();
-
+	//pRoot->Release();
+	
 	delete pRoot; // TODO: We are leaking memory
 }
 
