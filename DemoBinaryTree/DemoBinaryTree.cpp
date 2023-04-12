@@ -5,7 +5,12 @@
 #include "Node.h"
 #include <vector>
 typedef unsigned int uint;
-int main()
+
+#define _CRTDBG_MAP_ALLOC
+#include <cstdlib>
+#include <crtdbg.h>
+
+void wrapper(void)
 {
 	//Node* temp = new Node[10];
 
@@ -22,11 +27,16 @@ int main()
 	pRoot->Push(3);
 	pRoot->Push(1);
 
-
 	pRoot->Display();
 	//pRoot->Release();
-	
+
 	delete pRoot; // TODO: We are leaking memory
+}
+int main()
+{
+	wrapper();
+
+	_CrtDumpMemoryLeaks();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
